@@ -36,6 +36,19 @@
 		#define UART_PORT_RX			MDR_PORTD	
 		#define UART_PORT_PinRX		PORT_Pin_14
 		#define UART_PORT_FuncRX  PORT_FUNC_MAIN	
+    
+	#elif defined ( USE_MDR1986VE3 )
+	
+		#define UART_CLOCK_TX 		RST_CLK_PCLK_PORTD
+		#define UART_CLOCK_RX 		RST_CLK_PCLK_PORTD
+	
+		#define UART_PORT_TX			MDR_PORTD
+		#define UART_PORT_PinTX		PORT_Pin_13
+		#define UART_PORT_FuncTX  PORT_FUNC_MAIN
+	
+		#define UART_PORT_RX			MDR_PORTD	
+		#define UART_PORT_PinRX		PORT_Pin_14
+		#define UART_PORT_FuncRX  PORT_FUNC_MAIN    
 		
 	#endif	
 	
@@ -69,7 +82,21 @@
 	
 		#define UART_PORT_RX			MDR_PORTC	
 		#define UART_PORT_PinRX		PORT_Pin_4
-		#define UART_PORT_FuncRX  PORT_FUNC_MAIN	
+		#define UART_PORT_FuncRX  PORT_FUNC_MAIN
+
+
+	#elif defined ( USE_MDR1986VE3 )   
+	
+		#define UART_CLOCK_TX 		RST_CLK_PCLK_PORTC
+		#define UART_CLOCK_RX 		RST_CLK_PCLK_PORTC
+	
+		#define UART_PORT_TX			MDR_PORTC
+		#define UART_PORT_PinTX		PORT_Pin_3
+		#define UART_PORT_FuncTX  PORT_FUNC_MAIN
+	
+		#define UART_PORT_RX			MDR_PORTC	
+		#define UART_PORT_PinRX		PORT_Pin_4
+		#define UART_PORT_FuncRX  PORT_FUNC_MAIN
 		
 	#endif	
 	
